@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voz de Mando | Curso Ejecutivo de Articulación y Liderazgo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Esferas decorativas de fondo para efecto Light Glassmorphism -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <!-- Barra de navegación superior fija -->
+  <header class="glass-header">
+    <div class="container header-content">
+      <div class="brand">
+        <span class="brand-badge">VM</span>
+        <div>
+          <span class="brand-title">Voz de Mando</span>
+          <span class="brand-sub">Executive Communication Lab</span>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#metodologia">Metodología</a>
+        <a href="#aula">Aula Interactiva</a>
+        <a href="#laboratorio">Laboratorio de Frases</a>
+      </nav>
+
+      <!-- Barra de progreso global en tiempo real -->
+      <div class="progress-widget" title="Tu avance general en el curso">
+        <div class="progress-info">
+          <span>Avance del curso</span>
+          <strong id="global-progress-text">0% (0/15)</strong>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="global-progress-bar" style="width: 0%"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECCIÓN 1: HERO -->
+    <section id="inicio" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy glass-card">
+          <div class="pill-tag">Programa Ejecutivo • 15 Lecciones Prácticas</div>
+          <h1>Habla con claridad, proyecta autoridad y lidera cualquier sala.</h1>
+          <p>
+            Domina las articulaciones verbales, la cadencia vocal y las estructuras mentales que distinguen a los grandes líderes en reuniones críticas, negociaciones y gestión de equipos.
+          </p>
+          <div class="hero-actions">
+            <a href="#aula" class="btn-primary">Comenzar Entrenamiento</a>
+            <button type="button" class="btn-secondary" id="reset-progress-btn">Reiniciar Progreso</button>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <strong>4 Módulos</strong>
+              <span>Ruta estructurada</span>
+            </div>
+            <div class="metric-item">
+              <strong>15 Ejercicios</strong>
+              <span>Práctica aplicada</span>
+            </div>
+            <div class="metric-item">
+              <strong>100% Interactivo</strong>
+              <span>Guardado automático</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual glass-card">
+          <img
+            src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1000&q=80"
+            alt="Líder ejecutivo presentando estrategia frente a su equipo"
+            class="hero-img"
+          />
+          <div class="floating-glass-note">
+            <span class="dot-live"></span>
+            <div>
+              <strong>Regla de los 30 Segundos</strong>
+              <p>“La claridad estructural transmite más autoridad que el volumen de voz.”</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: PILARES DE METODOLOGÍA -->
+    <section id="metodologia" class="pillars-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="pill-tag">Arquitectura del Liderazgo Verbal</span>
+          <h2>Los 4 pilares de una comunicación ejecutiva impecable</h2>
+        </div>
+
+        <div class="pillars-grid">
+          <article class="glass-card pillar-card">
+            <img
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=700&q=80"
+              alt="Presencia ejecutiva y voz"
+              class="pillar-img"
+            />
+            <div class="pillar-body">
+              <span class="module-num">Módulo 01</span>
+              <h3>Presencia y Autoridad Vocal</h3>
+              <p>Controla los primeros segundos, elimina muletillas y utiliza pausas estratégicas para sostener la atención.</p>
+            </div>
+          </article>
+
+          <article class="glass-card pillar-card">
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=80"
+              alt="Narrativa estratégica con equipos"
+              class="pillar-img"
+            />
+            <div class="pillar-body">
+              <span class="module-num">Módulo 02</span>
+              <h3>Narrativa y Persuasión</h3>
+              <p>Convierte datos complejos en decisiones accionables leyendo el lenguaje no verbal de tu audiencia.</p>
+            </div>
+          </article>
+
+          <article class="glass-card pillar-card">
+            <img
+              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=700&q=80"
+              alt="Conversaciones difíciles y feedback"
+              class="pillar-img"
+            />
+            <div class="pillar-body">
+              <span class="module-num">Módulo 03</span>
+              <h3>Límites y Feedback Difícil</h3>
+              <p>Corrige desvíos en minutos, di “no” con criterio ejecutivo y redirige reuniones sin fricción.</p>
+            </div>
+          </article>
+
+          <article class="glass-card pillar-card">
+            <img
+              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=700&q=80"
+              alt="Resolución de crisis y liderazgo"
+              class="pillar-img"
+            />
+            <div class="pillar-body">
+              <span class="module-num">Módulo 04</span>
+              <h3>Crisis y Escucha de Alto Nivel</h3>
+              <p>Desactiva tensiones en tiempo real y guía a tus equipos en escenarios de alta presión operativa.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: AULA INTERACTIVA CON EJERCICIOS Y PROGRESO -->
+    <section id="aula" class="classroom-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="pill-tag">Plataforma de Entrenamiento</span>
+          <h2>Aula Interactiva: Lecciones y Ejercicios Prácticos</h2>
+          <p>Selecciona cualquier lección, estudia la técnica y completa el ejercicio práctico para registrar tu avance.</p>
+        </div>
+
+        <!-- Filtros por módulo -->
+        <div class="module-tabs" id="module-tabs">
+          <button class="tab-btn active" data-module="all">Todas (15)</button>
+          <button class="tab-btn" data-module="1">Módulo 1: Presencia</button>
+          <button class="tab-btn" data-module="2">Módulo 2: Narrativa</button>
+          <button class="tab-btn" data-module="3">Módulo 3: Límites</button>
+          <button class="tab-btn" data-module="4">Módulo 4: Crisis</button>
+        </div>
+
+        <div class="classroom-layout">
+          <!-- Lista lateral de lecciones -->
+          <aside class="glass-card lesson-sidebar" id="lesson-list"></aside>
+
+          <!-- Panel principal de estudio y ejercicio -->
+          <div class="glass-card lesson-stage" id="lesson-stage"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: LABORATORIO DE ARTICULACIONES EJECUTIVAS -->
+    <section id="laboratorio" class="lab-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="pill-tag">Guía Rápida de Bolsillo</span>
+          <h2>Articulaciones Verbales: De Reactivo a Líder Estratégico</h2>
+        </div>
+
+        <div class="lab-grid">
+          <div class="glass-card lab-card">
+            <span class="badge-bad">Evitar (Lenguaje dubitativo)</span>
+            <p class="phrase-old">“Perdón por molestar, creo que tal vez deberíamos revisar los tiempos porque estamos un poco atrasados.”</p>
+            <div class="divider"></div>
+            <span class="badge-good">Usar (Articulación ejecutiva)</span>
+            <p class="phrase-new">“Hagamos un ajuste de prioridad: hoy tenemos un desvío del 15% en tiempos y propongo estas dos acciones para recuperarlo antes del viernes.”</p>
+          </div>
+
+          <div class="glass-card lab-card">
+            <span class="badge-bad">Evitar (Negativa cerrada)</span>
+            <p class="phrase-old">“No puedo tomar ese proyecto ahora, ya tengo demasiadas cosas encima y no llego.”</p>
+            <div class="divider"></div>
+            <span class="badge-good">Usar (Límite con criterio)</span>
+            <p class="phrase-new">“Para garantizar el cumplimiento de la entrega actual, hoy no podemos absorber este alcance sin redefinir prioridades. ¿Qué prefieres que pospongamos?”</p>
+          </div>
+
+          <div class="glass-card lab-card">
+            <span class="badge-bad">Evitar (Interrupción brusca)</span>
+            <p class="phrase-old">“Bueno, ya entendimos, pasemos a otra cosa porque nos estamos yendo por las ramas.”</p>
+            <div class="divider"></div>
+            <span class="badge-good">Usar (Redirección con tacto)</span>
+            <p class="phrase-new">“Excelente punto sobre la operación, Carlos. Para cuidar el tiempo de la sala, lo dejo anotado para verlo aparte y cerramos ahora la decisión presupuestaria.”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="glass-footer">
+    <div class="container footer-content">
+      <p><strong>Voz de Mando</strong> — Programa Ejecutivo de Comunicación y Liderazgo.</p>
+      <span id="footer-status">Progreso guardado localmente en tu navegador.</span>
+    </div>
+  </footer>
+
+  <!-- Lógica completa del curso y ejercicios interactivos -->
+  <script>
+    const lessonsData = [
+      {
+        id: 1,
+        module: 1,
+        moduleName: "Presencia y Autoridad Vocal",
+        title: "Los primeros 30 segundos de liderazgo",
+        duration: "15 min",
+        image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80",
+        concept: "Antes de presentar datos o propuestas, tu audiencia evalúa dos cosas: calma y dirección. Un líder nunca empieza disculpándose ni justificando el contexto; abre con el propósito claro de la conversación y una pausa de dos segundos.",
+        formula: "Postura erguida + Pausa de 2 seg + Titular ejecutivo en una frase.",
+        exerciseType: "choice",
+        prompt: "Estás por iniciar una reunión crítica con la dirección tras un problema operativo. ¿Cuál es la mejor apertura de 15 segundos?",
+        options: [
+          "Hola a todos, perdón por la demora, tuvimos una mañana muy complicada pero vamos a tratar de ver qué pasó.",
+          "Buenos días. Hoy revisaremos la causa raíz del desvío de ayer y las tres medidas inmediatas que ya están en marcha para estabilizar la operación.",
+          "Bueno, como todos saben hubo un inconveniente bastante grave, así que quería escuchar qué opinan ustedes."
+        ],
+        correctIndex: 1,
+        feedback: "Exacto. Vas directo al punto, transmites control emocional y presentas solución desde la primera oración."
+      },
+      {
+        id: 2,
+        module: 1,
+        moduleName: "Presencia y Autoridad Vocal",
+        title: "Articulación y cadencia de alto impacto",
+        duration: "12 min",
+        image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=900&q=80",
+        concept: "Hablar rápido diluye tu autoridad; hacer pausas deliberadas después de una idea clave obliga a la sala a procesar tu mensaje. Sustituye las muletillas ('eh', 'este', 'o sea') por silencio consciente y cierra cada frase con entonación descendente.",
+        formula: "Idea clave -> Silencio de 1.5 segundos -> Cierre con tono firme hacia abajo.",
+        exerciseType: "input",
+        prompt: "Reescribe esta frase eliminando inseguridad y muletillas: 'Eh, bueno, creo que quizás deberíamos cambiar el turno de carga mañana, ¿no?'",
+        placeholder: "Escribe tu versión ejecutiva aquí (ej: Mañana adelantaremos el turno de carga a las 06:00 para asegurar...)",
+        minLength: 25,
+        feedback: "¡Muy bien! Al eliminar condicionales ('quizás', 'creo') y cerrar como afirmación, tu instrucción gana claridad inmediata."
+      },
+      {
+        id: 3,
+        module: 1,
+        moduleName: "Presencia y Autoridad Vocal",
+        title: "Mentalidad de certeza bajo presión",
+        duration: "10 min",
+        image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=80",
+        concept: "Cuando te cuestionan un indicador o una decisión en público, defenderte a la defensiva debilita tu posición. La certeza ejecutiva consiste en validar el dato objetivo, separar el hecho de la emoción y responder con estructura.",
+        formula: "Reconocer la pregunta + Dato verificable + Próximo paso.",
+        exerciseType: "choice",
+        prompt: "Un gerente cuestiona en voz alta por qué subió un costo este mes. ¿Cómo respondes con autoridad serena?",
+        options: [
+          "No es culpa de mi área, los proveedores subieron todo y nadie nos avisó a tiempo.",
+          "Buena observación. El incremento del 8% responde al flete extraordinario de la semana 2; ya renegociamos la tarifa para normalizarlo el próximo mes.",
+          "La verdad no tengo el detalle exacto aquí, pero seguro no es tan grave como parece."
+        ],
+        correctIndex: 1,
+        feedback: "Excelente. Validas la observación sin ponerte a la defensiva, entregas el dato exacto y muestras acción correctiva."
+      },
+      {
+        id: 4,
+        module: 1,
+        moduleName: "Presencia y Autoridad Vocal",
+        title: "Dominar cualquier sala o auditorio",
+        duration: "12 min",
+        image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=900&q=80",
+        concept: "Para captar tanto a una junta directiva como a un equipo operativo en planta, ancla la mirada en una persona por cada idea completa (3 a 4 segundos) en lugar de barrer la sala con los ojos sin enfocar a nadie.",
+        formula: "1 idea completa = 1 interlocutor enfocado.",
+        exerciseType: "choice",
+        prompt: "¿Qué hábito visual proyecta mayor seguridad al hablar frente a un grupo de 15 personas?",
+        options: [
+          "Mirar constantemente las diapositivas o tus notas para no olvidar ningún dato.",
+          "Mover la mirada rápidamente de izquierda a derecha sin detenerte en nadie.",
+          "Sostener contacto visual natural con una persona durante una frase completa y luego cambiar a otro sector de la sala."
+        ],
+        correctIndex: 2,
+        feedback: "Correcto. El contacto visual sostenido por frase genera conexión individual y proyecta dominio del espacio."
+      },
+      {
+        id: 5,
+        module: 2,
+        moduleName: "Narrativa Estratégica y Persuasión",
+        title: "Storytelling ejecutivo con datos",
+        duration: "14 min",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80",
+        concept: "Los datos informan, pero el contexto convence. Utiliza la estructura 'Situación -> Tensión -> Resolución' (STR) para que cualquier reporte técnico se traduzca en una decisión de negocio.",
+        formula: "Situación actual + Impacto si no actuamos + Propuesta concreta.",
+        exerciseType: "input",
+        prompt: "Redacta un micro-relato ejecutivo (STR) para pedir aprobación de una mejora en tu área usando datos o tiempos.",
+        placeholder: "Ej: Hoy procesamos 400 pedidos diarios (Situación), pero el cuello de botella retrasa 45 min la salida (Tensión). Con este ajuste ahorramos...",
+        minLength: 30,
+        feedback: "¡Gran estructura! Has conectado el dato operativo con su impacto real y una solución accionable."
+      },
+      {
+        id: 6,
+        module: 2,
+        moduleName: "Narrativa Estratégica y Persuasión",
+        title: "Lenguaje corporal de influencia",
+        duration: "15 min",
+        image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80",
+        concept: "Tu cuerpo habla antes que tu voz. Mantén las manos visibles por encima de la mesa, utiliza gestos abiertos a la altura del torso para enfatizar puntos clave y evita cruzar brazos o esconder las manos en los bolsillos.",
+        formula: "Manos visibles + Hombros relajados + Gestos alineados al mensaje.",
+        exerciseType: "choice",
+        prompt: "Durante una negociación tensa, ¿qué postura física comunica apertura y firmeza simultáneamente?",
+        options: [
+          "Inclinarte ligeramente hacia adelante con los antebrazos apoyados y las palmas abiertas al explicar tu propuesta.",
+          "Recostarte hacia atrás con los brazos cruzados para mostrar que no vas a ceder.",
+          "Gesticular rápido cerca del rostro mientras hablas."
+        ],
+        correctIndex: 0,
+        feedback: "Así es. Inclinarte levemente hacia adelante con palmas abiertas denota interés, transparencia y seguridad."
+      },
+      {
+        id: 7,
+        module: 2,
+        moduleName: "Narrativa Estratégica y Persuasión",
+        title: "Lectura rápida de interlocutores",
+        duration: "15 min",
+        image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=900&q=80",
+        concept: "Adapta tu articulación al perfil de quien escucha: los perfiles analíticos piden precisión y métricas; los directivos piden impacto y velocidad; los operativos piden pasos claros y recursos.",
+        formula: "Identificar prioridad del interlocutor -> Ajustar el nivel de detalle.",
+        exerciseType: "choice",
+        prompt: "Tienes 2 minutos en el pasillo con el Director General para comentarle un proyecto. ¿Qué enfoque eliges?",
+        options: [
+          "Explicarle paso a paso toda la configuración técnica que hiciste durante la semana.",
+          "Presentarle el beneficio en ahorro/eficiencia, el estado actual y qué decisión necesitas de él.",
+          "Contarle todas las dificultades administrativas que tuviste con otros departamentos."
+        ],
+        correctIndex: 1,
+        feedback: "Exacto. Un perfil ejecutivo valora el impacto, la síntesis y la claridad sobre qué decisión se requiere."
+      },
+      {
+        id: 8,
+        module: 3,
+        moduleName: "Conversaciones Difíciles y Límites Claros",
+        title: "Feedback directo y accionable en 3 minutos",
+        duration: "16 min",
+        image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80",
+        concept: "Evita el 'sándwich' de elogios artificiales que confunden al colaborador. Utiliza el modelo Hecho -> Impacto -> Compromiso para corregir conductas de forma respetuosa y cristalina.",
+        formula: "Cuando ocurre [Hecho observable] -> El impacto es [Consecuencia] -> Necesito que hagamos [Acuerdo].",
+        exerciseType: "input",
+        prompt: "Escribe un feedback de 3 líneas para un colaborador que llega tarde a los cierres de turno, usando el modelo Hecho -> Impacto -> Compromiso.",
+        placeholder: "Ej: Juan, esta semana el cierre se entregó 20 min tarde en tres ocasiones (Hecho). Eso retrasa la salida del transporte (Impacto)...",
+        minLength: 30,
+        feedback: "¡Excelente! Atacas el comportamiento objetivo y su impacto sin descalificar a la persona."
+      },
+      {
+        id: 9,
+        module: 3,
+        moduleName: "Conversaciones Difíciles y Límites Claros",
+        title: "Gestión inteligente de perfiles difíciles",
+        duration: "14 min",
+        image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80",
+        concept: "Ante personas reactivas o confrontativas, nunca iguales su tono emocional. Baja levemente tu ritmo al hablar, utiliza preguntas de anclaje y lleva la charla de la queja general al terreno de los hechos.",
+        formula: "Tono calmo + Pregunta de precisión ('¿Qué parte específica necesitamos resolver hoy?').",
+        exerciseType: "choice",
+        prompt: "Un colega dice en tono alterado: 'Siempre cambian las prioridades a última hora y así es imposible trabajar'. ¿Cómo respondes?",
+        options: [
+          "Tú tampoco avisas cuando te atrasas, así que no te quejes ahora.",
+          "Entiendo que el cambio genera presión. Revisemos juntos los dos pedidos urgentes de hoy para definir cuál sale primero.",
+          "Bueno, así son las cosas aquí, hay que adaptarse."
+        ],
+        correctIndex: 1,
+        feedback: "Muy bien. Validas la fricción sin engancharte en la pelea y llevas la conversación a una acción concreta."
+      },
+      {
+        id: 10,
+        module: 3,
+        moduleName: "Conversaciones Difíciles y Límites Claros",
+        title: "Decir 'No' con criterio ejecutivo",
+        duration: "15 min",
+        image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=80",
+        concept: "Un líder protege el foco de su equipo. Decir 'no' con altura profesional significa decir 'sí' a la prioridad estratégica, ofreciendo siempre una alternativa viable o mostrando el costo de oportunidad.",
+        formula: "Validar el pedido + Explicar el impacto en prioridades + Ofrecer alternativa.",
+        exerciseType: "input",
+        prompt: "Te piden sumar una tarea no planificada hoy a las 16:00 cuando tu equipo está cerrando el despacho crítico. Redacta tu respuesta ejecutiva.",
+        placeholder: "Ej: Podemos incorporar ese análisis mañana a primera hora para no comprometer el cierre del despacho de hoy...",
+        minLength: 25,
+        feedback: "¡Impecable! Proteges la operación crítica y ofreces una ventana realista de ejecución."
+      },
+      {
+        id: 11,
+        module: 3,
+        moduleName: "Conversaciones Difíciles y Límites Claros",
+        title: "Interrumpir y redirigir con elegancia",
+        duration: "10 min",
+        image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=900&q=80",
+        concept: "Cuando una reunión pierde el rumbo, el líder cuida el tiempo colectivo. Usa el nombre de la persona, sintetiza brevemente lo que aportó y redirige hacia la decisión pendiente.",
+        formula: "Nombre + Síntesis de 5 palabras + Puente al objetivo.",
+        exerciseType: "choice",
+        prompt: "¿Cuál es la forma más elegante de cortar un monólogo de 10 minutos en una reunión de equipo?",
+        options: [
+          "Perdón que te corte, pero nos estamos quedando sin tiempo y eso no es el tema.",
+          "Gracias, Martín, queda claro el punto sobre los insumos. Para cerrar a tiempo, volvamos ahora al cronograma de entregas.",
+          "Mirar el reloj repetidamente esperando que la persona se dé cuenta sola."
+        ],
+        correctIndex: 1,
+        feedback: "Correcto. Reconoces el aporte con respeto y retomas el timón de la agenda con naturalidad."
+      },
+      {
+        id: 12,
+        module: 4,
+        moduleName: "Negociación, Escucha y Resolución de Crisis",
+        title: "Desactivar tensiones y conflictos en tiempo real",
+        duration: "15 min",
+        image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80",
+        concept: "Cuando dos áreas chocan por un error, el líder cambia el enfoque de 'quién tuvo la culpa' a 'cómo evitamos que vuelva a pasar'. Nombrar el objetivo común desactiva la postura defensiva en segundos.",
+        formula: "Objetivo compartido + Enfoque en el proceso + Acuerdo inmediato.",
+        exerciseType: "choice",
+        prompt: "Dos supervisores discuten frente al equipo sobre quién cometió un error en una planilla. ¿Qué frase desactiva el conflicto?",
+        options: [
+          "Después reviso las cámaras para ver quién se equivocó y aplicar sanción.",
+          "Ambos buscamos que el cliente reciba el pedido sin fallas. Corrijamos ahora esta orden y luego ajustamos el doble control en la planilla.",
+          "Dejen de discutir aquí que dan mal ejemplo."
+        ],
+        correctIndex: 1,
+        feedback: "Excelente. Reenfocas a ambos en el objetivo común, resuelves la urgencia y mejoras el sistema."
+      },
+      {
+        id: 13,
+        module: 4,
+        moduleName: "Negociación, Escucha y Resolución de Crisis",
+        title: "Escucha activa de alto nivel",
+        duration: "12 min",
+        image: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=900&q=80",
+        concept: "Escuchar como un líder no es esperar tu turno para hablar; es hacer preguntas que destraban problemas y parafrasear la esencia para confirmar alineación.",
+        formula: "Escuchar sin interrumpir + Parafrasear ('Si te entiendo bien, el punto crítico es...') + Pregunta de avance.",
+        exerciseType: "input",
+        prompt: "Formula una pregunta poderosa para destrabar a un miembro de tu equipo que dice 'no sé cómo resolver este cuello de botella'.",
+        placeholder: "Ej: Si tuvieras todos los recursos disponibles hoy, ¿cuál sería el primer paso que darías para...",
+        minLength: 20,
+        feedback: "¡Gran pregunta! Transfiere protagonismo y activa el pensamiento resolutivo del colaborador."
+      },
+      {
+        id: 14,
+        module: 4,
+        moduleName: "Negociación, Escucha y Resolución de Crisis",
+        title: "Articulación en momentos de crisis o cambios",
+        duration: "13 min",
+        image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+        concept: "En momentos de incertidumbre, el vacío de comunicación se llena con rumores. Comunica en tres bloques: Qué sabemos con certeza, Qué estamos haciendo ahora y Cuándo daremos la próxima actualización.",
+        formula: "Hechos confirmados + Plan en curso + Próximo punto de control.",
+        exerciseType: "choice",
+        prompt: "Hay una caída del sistema central en plena hora pico. ¿Cómo comunicas la situación al equipo operativo?",
+        options: [
+          "No sabemos qué pasó, esperemos a ver si vuelve solo en un rato.",
+          "El sistema está fuera de línea desde las 10:15; TI ya trabaja en el restablecimiento. Mientras tanto operamos con respaldo manual y les actualizo a las 11:00.",
+          "Traten de hacer lo que puedan hasta que se arregle."
+        ],
+        correctIndex: 1,
+        feedback: "Perfecto. Das certeza operativa, protocolo alternativo y un horario concreto de seguimiento."
+      },
+      {
+        id: 15,
+        module: 4,
+        moduleName: "Negociación, Escucha y Resolución de Crisis",
+        title: "Tu plan de entrenamiento diario de 5 minutos",
+        duration: "12 min",
+        image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=900&q=80",
+        concept: "La articulación ejecutiva es un músculo. Antes de tu reunión más importante del día, dedica 5 minutos a definir tu titular de apertura, tus 3 puntos clave y tu llamado a la acción final.",
+        formula: "1 Titular + 3 Argumentos + 1 Cierre accionable.",
+        exerciseType: "input",
+        prompt: "Define hoy mismo tu compromiso personal de liderazgo verbal para tu próxima reunión importante.",
+        placeholder: "Ej: En mi próxima reunión abriré sin disculpas, haré pausas después de cada indicador y cerraré con responsables claros.",
+        minLength: 20,
+        feedback: "¡Felicitaciones! Has completado el entrenamiento integral de Voz de Mando."
+      }
+    ];
+
+    const STORAGE_KEY = "voz_de_mando_completed_v1";
+    let completedLessons = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+    let currentLessonId = 1;
+    let currentFilter = "all";
+
+    const lessonListEl = document.getElementById("lesson-list");
+    const lessonStageEl = document.getElementById("lesson-stage");
+    const progressBarEl = document.getElementById("global-progress-bar");
+    const progressTextEl = document.getElementById("global-progress-text");
+
+    function saveProgress() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(completedLessons));
+      updateProgressBar();
+    }
+
+    function updateProgressBar() {
+      const total = lessonsData.length;
+      const done = completedLessons.length;
+      const percent = Math.round((done / total) * 100);
+      progressBarEl.style.width = `${percent}%`;
+      progressTextEl.textContent = `${percent}% (${done}/${total})`;
+    }
+
+    function renderSidebar() {
+      const filtered = currentFilter === "all"
+        ? lessonsData
+        : lessonsData.filter(l => String(l.module) === currentFilter);
+
+      lessonListEl.innerHTML = filtered.map(lesson => {
+        const isCompleted = completedLessons.includes(lesson.id);
+        const isActive = lesson.id === currentLessonId;
+        return `
+          <button class="lesson-item ${isActive ? "active" : ""} ${isCompleted ? "completed" : ""}" onclick="selectLesson(${lesson.id})">
+            <span class="lesson-status-icon">${isCompleted ? "✓" : lesson.id}</span>
+            <div class="lesson-item-text">
+              <small>Módulo ${lesson.module} • ${lesson.duration}</small>
+              <strong>${lesson.title}</strong>
+            </div>
+          </button>
+        `;
+      }).join("");
+    }
+
+    function renderStage() {
+      const lesson = lessonsData.find(l => l.id === currentLessonId);
+      const isCompleted = completedLessons.includes(lesson.id);
+
+      let exerciseHTML = "";
+      if (lesson.exerciseType === "choice") {
+        exerciseHTML = `
+          <div class="options-stack" id="options-container">
+            ${lesson.options.map((opt, idx) => `
+              <label class="option-card">
+                <input type="radio" name="lesson-option" value="${idx}" />
+                <span>${opt}</span>
+              </label>
+            `).join("")}
+          </div>
+        `;
+      } else {
+        exerciseHTML = `
+          <textarea
+            id="lesson-textarea"
+            class="glass-textarea"
+            rows="3"
+            placeholder="${lesson.placeholder}"
+          ></textarea>
+        `;
+      }
+
+      lessonStageEl.innerHTML = `
+        <div class="stage-header">
+          <div>
+            <span class="pill-tag">Módulo ${lesson.module}: ${lesson.moduleName}</span>
+            <h3>Lección ${lesson.id}. ${lesson.title}</h3>
+          </div>
+          <span class="duration-pill">⏱ ${lesson.duration}</span>
+        </div>
+
+        <img src="${lesson.image}" alt="${lesson.title}" class="stage-banner" />
+
+        <div class="stage-concept">
+          <h4>Concepto Clave de Liderazgo</h4>
+          <p>${lesson.concept}</p>
+          <div class="formula-box">
+            <strong>Fórmula de Articulación:</strong> ${lesson.formula}
+          </div>
+        </div>
+
+        <div class="exercise-box">
+          <div class="exercise-header">
+            <h4>Ejercicio Práctico Obligatorio</h4>
+            <span class="status-badge ${isCompleted ? "done" : "pending"}">
+              ${isCompleted ? "Completado ✓" : "Pendiente"}
+            </span>
+          </div>
+          <p class="exercise-prompt">${lesson.prompt}</p>
+          ${exerciseHTML}
+          <div class="exercise-actions">
+            <button type="button" class="btn-primary" onclick="validateExercise(${lesson.id})">
+              Validar y Registrar Avance
+            </button>
+            ${lesson.id < lessonsData.length ? `
+              <button type="button" class="btn-secondary" onclick="selectLesson(${lesson.id + 1})">
+                Siguiente Lección →
+              </button>
+            ` : ""}
+          </div>
+          <div id="exercise-feedback" class="feedback-banner ${isCompleted ? "success show" : ""}">
+            ${isCompleted ? lesson.feedback : ""}
+          </div>
+        </div>
+      `;
+    }
+
+    window.selectLesson = function(id) {
+      currentLessonId = id;
+      renderSidebar();
+      renderStage();
+    };
+
+    window.validateExercise = function(id) {
+      const lesson = lessonsData.find(l => l.id === id);
+      const feedbackEl = document.getElementById("exercise-feedback");
+
+      if (lesson.exerciseType === "choice") {
+        const selected = document.querySelector('input[name="lesson-option"]:checked');
+        if (!selected) {
+          feedbackEl.className = "feedback-banner error show";
+          feedbackEl.textContent = "Selecciona una de las opciones antes de validar el ejercicio.";
+          return;
+        }
+        if (Number(selected.value) !== lesson.correctIndex) {
+          feedbackEl.className = "feedback-banner error show";
+          feedbackEl.textContent = "Esa respuesta aún suena reactiva o dubitativa. Intenta elegir la opción con mayor estructura y calma ejecutiva.";
+          return;
+        }
+      } else {
+        const textVal = document.getElementById("lesson-textarea").value.trim();
+        if (textVal.length < lesson.minLength) {
+          feedbackEl.className = "feedback-banner error show";
+          feedbackEl.textContent = `Desarrolla un poco más tu articulación (mínimo ${lesson.minLength} caracteres) para completar la práctica.`;
+          return;
+        }
+      }
+
+      if (!completedLessons.includes(id)) {
+        completedLessons.push(id);
+        saveProgress();
+      }
+
+      feedbackEl.className = "feedback-banner success show";
+      feedbackEl.textContent = lesson.feedback;
+      renderSidebar();
+      const badge = document.querySelector(".status-badge");
+      if (badge) {
+        badge.className = "status-badge done";
+        badge.textContent = "Completado ✓";
+      }
+    };
+
+    // Filtros de módulos
+    document.querySelectorAll(".tab-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        currentFilter = btn.dataset.module;
+        renderSidebar();
+      });
+    });
+
+    // Botón reiniciar progreso
+    document.getElementById("reset-progress-btn").addEventListener("click", () => {
+      if (confirm("¿Deseas reiniciar tu barra de avance y volver a practicar todos los ejercicios?")) {
+        completedLessons = [];
+        saveProgress();
+        renderSidebar();
+        renderStage();
+      }
+    });
+
+    // Inicializar vista
+    updateProgressBar();
+    renderSidebar();
+    renderStage();
+  </script>
+</body>
+</html>
